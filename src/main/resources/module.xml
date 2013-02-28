@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  //**********************************************************************
+  Content2Example
+  %%
+  Copyright (C) 2013 e-Spirit AG
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  *********************************************************************//*
+  -->
+
+<module>
+    <name>${project.artifactId}</name>
+    <version>${project.version}</version>
+    <description>${project.artifactId}</description>
+    <vendor>com.espirit.moddev.knowledgebase</vendor>
+    <components>
+        <public>
+            <name>Executable</name>
+            <class>com.espirit.moddev.knowledgebase.Content2ExampleExecutable_Create</class>
+        </public>
+        <public>
+            <name>Executable</name>
+            <class>com.espirit.moddev.knowledgebase.Content2ExampleExecutable_Update</class>
+        </public> 
+        <public>
+            <name>Executable</name>
+            <class>com.espirit.moddev.knowledgebase.Content2ExampleExecutable_Delete</class>
+        </public>
+
+    </components>
+    <resources>
+        <resource scope="module">lib/${project.artifactId}-${project.version}.jar</resource>
+    </resources>
+</module>
